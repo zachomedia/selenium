@@ -1,0 +1,19 @@
+# Docker Compose (v2)
+
+version: "2"
+services:
+
+  hub:
+    image: drupalwxt/selenium:hub
+    ports:
+      - "4444:4444"
+    network:
+      - hub
+
+  firefox:
+    image: drupalwxt/selenium:node-firefox
+    network:
+      - hub
+
+  networks:
+    hub:
