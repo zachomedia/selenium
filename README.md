@@ -22,6 +22,5 @@ docker run -d \
     drupalwxt/selenium
 ```
 
-<!-- Links Referenced -->
 
 [dockerhub]:         https://hub.docker.com/r/drupalwxt/selenium/
