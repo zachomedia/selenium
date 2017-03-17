@@ -4,14 +4,14 @@ version: "2"
 services:
 
   hub:
-    image: drupalwxt/selenium:hub
+    image: drupalcomposer/selenium:hub
     ports:
       - "4444:4444"
     network:
       - hub
 
   firefox:
-    image: drupalwxt/selenium:node-firefox
+    image: drupalcomposer/selenium:node-firefox
     network:
       - hub
 

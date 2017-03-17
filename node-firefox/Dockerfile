@@ -1,6 +1,6 @@
 # vim:set ft=dockerfile:
 
-FROM drupalwxt/selenium:base
+FROM drupalcomposer/selenium:base
 MAINTAINER William Hearn <sylus1984@gmail.com>
 
 ENV HUB_HOST hub

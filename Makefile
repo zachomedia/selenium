@@ -1,4 +1,4 @@
-NAME := drupalwxt/selenium
+NAME := drupalcomposer/selenium
 VERSION := $(or $(VERSION),$(VERSION),'latest')
 PLATFORM := $(shell uname -s)
 
