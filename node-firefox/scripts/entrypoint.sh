@@ -16,6 +16,10 @@ rm /tmp/.X99-lock
 export DISPLAY=":99.0"
 Xvfb $DISPLAY -screen 0 1280x1024x24 -ac -extension RANDR  &
 
+# Run a VNC server
+# (Runs in a loop to ensure it restarts if it crashes)
+sh -c "while true; do x11vnc -forever -display $DISPLAY -shared -forever -nopw; done" &
+
 java -jar selenium-server-standalone-$SELENIUM_VERSION.jar \
      -role node \
      -hub http://hub:$HUB_PORT/grid/register \
